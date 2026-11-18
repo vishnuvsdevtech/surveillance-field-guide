@@ -22,6 +22,20 @@ brief and nothing else.
 | 9 · EdgeVision's fit | Tabbed A/B/C diagrams with arrow-key support |
 | 10 · Cheat sheet | Ten cards and a ten-question quiz |
 
+## Figures
+
+Five hand-drawn SVG diagrams carry the concepts that words alone make abstract:
+
+1. **The whole system** (ch1) — camera → switch → recorder with disks and an AI block → operator, with the five job numbers placed on the boxes they belong to.
+2. **Control plane vs video** (ch4) — ONVIF as dashed request/response arrows, RTSP as one solid green arrow carrying the picture.
+3. **Profiles overlap** (ch5) — S / T / G / M as overlapping circles, with V noted as a release candidate.
+4. **Segments and the index** (ch7) — ten 2-second files with one corrupt, and the index table that maps time to filename, plus what happens when the index is lost.
+5. **Compliance matrix** (ch8) — which family applies in India, the EU, the US and to the industry, as filled and hollow dots.
+
+Each glossary card also carries a line icon (camera, box, disk, network, clock, shield, layers, cloud, document) so the vocabulary is recognisable before it is readable.
+
+All figures are inline SVG using theme variables, so they follow light and dark mode and stay crisp at any width. No bitmaps, no brand marks.
+
 ## Conventions kept throughout
 
 - **Status colours** mean the same thing everywhere: green = exists / yes,

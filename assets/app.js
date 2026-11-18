@@ -50,6 +50,14 @@
     if (e.target.closest('a')) { sidebar.classList.remove('open'); scrim.classList.remove('on'); }
   });
 
+  // figures declared with data-svg are filled from assets/visuals.js
+  document.querySelectorAll('[data-svg]').forEach((el) => {
+    const fig = window.VISUALS[el.dataset.svg];
+    if (!fig) return;
+    el.innerHTML = (typeof fig === 'function' ? fig() : fig) +
+      (el.dataset.cap ? `<figcaption>${el.dataset.cap}</figcaption>` : '');
+  });
+
   /* ---------------- ch1: pipeline ---------------- */
   (function pipeline() {
     const host = $('[data-w="pipeline"]');
@@ -98,7 +106,7 @@
       const f = filter.trim().toLowerCase();
       cards.innerHTML = window.TERMS.filter(([t, d]) => !f || t.toLowerCase().includes(f) || d.toLowerCase().includes(f))
         .map(([t, d]) => `<div class="flip" tabindex="0"><div class="flip-inner">
-          <div class="face"><b>${t}</b><span>click to reveal</span></div>
+          <div class="face"><div class="ti">${window.VISUALS.icon(t)}</div><b>${t}</b><span>click to reveal</span></div>
           <div class="face back"><p>${d}</p></div></div></div>`).join('');
       cards.querySelectorAll('.flip').forEach((c) => {
         const toggle = () => c.classList.toggle('open');

@@ -16,6 +16,8 @@ window.CH = [
   <span>A TV news station. Cameras film, cables carry the signal, a recorder tapes it, a library keeps
   the tapes, and people watch, search and send clips onward.</span></div>
 
+  <figure class="figure" data-svg="system" data-cap="The whole system in one picture. Five jobs, one frame of video: light becomes data at the camera, crosses the network, lands on disks inside the recorder, and is served back to an operator. EdgeVision is the middle box — plus the AI it adds."></figure>
+
   <div class="widget" data-w="pipeline"></div>
 
   <h3>The five jobs</h3>
@@ -133,6 +135,8 @@ window.CH = [
   changes settings and receives events. For live video, ONVIF only hands back the RTSP address; the video
   itself still travels over RTSP.</p>
 
+  <figure class="figure" data-svg="control" data-cap="Two separate conversations. The dashed lines are ONVIF — asking who the camera is and what it can do. The solid line is RTSP, carrying the video. ONVIF's answer to &quot;what is your stream address&quot; is just an rtsp:// URL."></figure>
+
   <div class="widget" data-w="onvifFlow"></div>
 
   <p>Without ONVIF you must know every brand's RTSP address format by heart. Many cheap cameras support
@@ -168,6 +172,8 @@ window.CH = [
       it must follow the profile's rules.</li>
     <li><strong>A product often supports several profiles.</strong> S + T + G + M is typical.</li>
   </ul>
+
+  <figure class="figure" data-svg="profiles" data-cap="Profiles overlap in practice: a product usually supports several, and S + T + G + M is typical. That is why a tender names a combination rather than a single profile."></figure>
 
   <div class="widget" data-w="profiles"></div>
 
@@ -232,6 +238,8 @@ window.CH = [
   <p class="lede">Video is stored in layers — "tiers". Each tier is slower and cheaper than the one above,
   and keeps video longer.</p>
 
+  <figure class="figure" data-svg="segments" data-cap="Why recorders cut video into short files, and why the index matters as much as the footage. One corrupt segment costs two seconds. A lost index costs everything, without losing a single byte."></figure>
+
   <div class="widget" data-w="ladder"></div>
 
   <h3>Three different protections</h3>
@@ -289,6 +297,8 @@ window.CH = [
   <div class="legal"><span>⚖</span><span><b>Orientation, not legal advice.</b> Which rules apply depends on
   the customer's country and industry. The certification team or a lawyer should confirm before we promise
   compliance.</span></div>
+
+  <figure class="figure" data-svg="compliance" data-cap="Which family bites where. Filled dots mean the rules apply in that region; hollow dots mean they do not. Device security and video standards follow the product; privacy, sector rules and evidence law follow the customer's country."></figure>
 
   <div class="widget" data-w="compliance"></div>
 
@@ -393,7 +403,7 @@ window.FAMILIES = [
       <li>An audit log of who viewed or exported what</li><li>Blurring other people in exports</li>
       <li>The ability to find and delete one person's data</li></ul>`,
     countries: ["in", "eu"] },
-  { id: "device", title: "Device cybersecurity", who: "Us", badge: "us",
+  { id: "device", title: "Device cybersecurity", who: "Vendor", badge: "us",
     slogan: "Your box must not be the hole hackers walk through.",
     body: `<p><strong>India:</strong> MeitY "Essential Requirements" for CCTV security (ER-01), notified April 2024 and enforced from April 2025. CCTV products need STQC security testing on top of BIS registration (IS 13252, safety). <em>Still to confirm: whether an AI box that records counts as a CCTV product.</em></p>
       <p><strong>Europe:</strong> ETSI EN 303 645 (IoT security baseline, already passed by major camera makers), EN 18031, and the coming Cyber Resilience Act.<br>
