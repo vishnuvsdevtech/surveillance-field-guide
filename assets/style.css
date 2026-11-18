@@ -254,4 +254,10 @@ td:first-child{color:var(--ink);font-weight:500}
   .sidebar.open{transform:translateX(0)}
   .scrim.on{display:block}
 }
+@media (max-width:560px){
+  .meta{display:none}
+  .brand{font-size:13px}
+  .brand em{display:none}
+  .chapter{padding:20px 0 26px}
+}
 @media print{.sidebar,.topbar,.progress{display:none}}
