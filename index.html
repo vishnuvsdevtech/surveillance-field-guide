@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surveillance Systems Field Guide — from camera to courtroom</title>
+<meta name="description" content="A ten-chapter interactive guide to how CCTV systems work: cameras, recorders, storage, protocols, ONVIF, retention and evidence. Written for engineers new to surveillance.">
+<meta name="theme-color" content="#f7f6f3">
+<link rel="canonical" href="https://vishnuvsdevtech.github.io/surveillance-field-guide/">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Chapters">☰</button>
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span>Surveillance Systems <em>Field Guide</em></span>
+  </div>
+  <div class="topbar-right">
+    <span class="meta mono" id="readTime">~25 min · 10 chapters</span>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" id="sidebar">
+    <div class="side-label mono">Chapters</div>
+    <ol class="chapters" id="chapterNav"></ol>
+    <div class="side-foot mono">
+      Researched November 2026<br>
+      Orientation, not legal advice.
+    </div>
+  </nav>
+
+  <main id="main"></main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<script src="assets/chapters.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
